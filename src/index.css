@@ -2,10 +2,8 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -14,12 +12,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+.body {
+  margin: 0%;
+  height: 100vh;
+  width: 100vw ;
 }
 .banner{
   text-align: center;
-  margin-top: 7%;
+  padding-top: 9vh;
+  font-weight: 600;
+  width: 100vw;
+  height: 30vh;
+  background-image: url('pexels-gabriel-peter-219375-696644.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#years{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 1%;
+}
+.years{
+  background-color:rgba(0, 255, 255, 0.258);
+  padding: 0 2vw;
+  border-radius: 15%;
+}
+.years:hover{
+  background-color: black;
+  border-style:solid;
 }
