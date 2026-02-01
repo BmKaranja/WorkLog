@@ -21,12 +21,10 @@
   text-align: center;
   padding-top: 9vh;
   font-weight: 600;
+  font-size:12vh ;
   width: 100vw;
   height: 30vh;
-  background-image: url('pexels-gabriel-peter-219375-696644.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(to top, #C50337 , #021C4F);
 }
 #years{
   display: flex;
@@ -35,13 +33,29 @@
   align-items: center;
   gap: 5vw;
   margin-top: 1%;
+
 }
-.years{
-  background-color:rgba(0, 255, 255, 0.258);
-  padding: 0 2vw;
+::-webkit-scrollbar-track {
+  margin: 0;   /* removes extra spacing */
+  background: transparent;
+}
+#months{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin-top: 1%;
+}
+
+.years, .months{
+  background-color:rgba(0, 255, 255, 0.105);
+  padding: 0 1vw;
   border-radius: 15%;
+  border-style: solid;
+  border-color: white;
 }
-.years:hover{
+.years:hover,.months:hover{
   background-color: black;
   border-style:solid;
 }
