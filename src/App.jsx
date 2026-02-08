@@ -1,21 +1,18 @@
-import { Link, Routes } from 'react-router'
-import './App.css'
-import Footer from './Footer'
-import Me from './Me'
+import React from 'react'
+import { Route } from 'react-router-dom'
+import { Routes } from 'react-router-dom'
+import Home from './Home'
+import Services from './Services'
+import WorkLog from './workLog'
 
 function App() {
   return (
-    <div className='body'>
-      <div className='text-6xl text-white banner'>
-        <h1>BRIAN K. MAINA</h1>
-      </div>
-      <main>
-        <nav id="years" >
-
-        </nav>
-        <Me/>
-        <Footer/>
-      </main>
+    <div>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/Services' element={<Services/>}></Route>
+        <Route path='/WorkLog' element={<WorkLog/>}></Route>
+      </Routes>
     </div>
   )
 }

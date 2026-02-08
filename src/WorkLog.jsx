@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Months() {
+function WorkLog() {
   return (
-    <div id>
+    <div>
       
     </div>
   )
 }
 
-export default Months
+export default WorkLog
