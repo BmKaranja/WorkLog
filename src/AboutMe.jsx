@@ -2,8 +2,7 @@ import React from 'react'
 
 function AboutMe() {
   return (
-    <div>
-      
+    <div className='h-120'>
     </div>
   )
 }
